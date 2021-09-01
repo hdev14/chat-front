@@ -1,0 +1,28 @@
+
+main section#header {
+  position: absolute;
+  top: 5%;
+  left: 30%;
+
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+main section#header h1 {
+  font-size: 1rem;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+
+main section#form {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.25);
+  min-width: 500px;
+  background-color: white;
+}

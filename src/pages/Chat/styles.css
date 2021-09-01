@@ -1,0 +1,133 @@
+main section#chat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-dark-gray);
+  border-radius: 2.5px;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  min-width: 1300px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main section#chat #chat-header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main section#chat #chat-header strong {
+  color: #eee;
+  font-size: 14px;
+}
+
+main section#chat ul {
+  list-style: none;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: scroll;
+  border-radius: 2px;
+  background-image: url('../../assets/background.jpg');
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+main section#chat ul li:last-child {
+  margin-bottom: 100px;
+}
+
+main section#chat ul li {
+  z-index: 1;
+  max-width: 55%;
+  min-width: 200px;
+}
+
+main section#chat ul li div strong {
+  color: #333;
+  font-size: 12px;
+}
+
+main section#chat ul li div {
+  padding: 10px;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  margin: 5px 0;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+}
+
+main section#chat ul li div p {
+  margin-top: 5px;
+  color: #FFF;
+}
+
+main section#chat ul li div small {
+  color: #BBB;
+  align-self: flex-end;
+}
+
+main section#chat ul li div strong {
+  color: #BBB;
+}
+
+main section#chat ul li.left {
+  align-self: flex-start;
+}
+
+main section#chat ul li.right {
+  align-self: flex-end;
+}
+
+main section#chat ul li.right div {
+  background-color: #056162;
+}
+
+main section#chat ul li.left div {
+  background-color: var(--color-dark-gray);
+}
+
+main section#chat ul li.connection {
+  align-self: center;
+  text-align: center;
+}
+
+main section#chat ul li.connection div {
+  background-color: #1E2A30;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: none;
+  margin: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: lightgray;
+}
+
+main section#chat ul li.connection div strong {
+  font-size: 1rem;
+  color: lightgray;
+}
+
+main section#chat ul li.connection div small {
+  display: none;
+}
+
+main section#chat ul li.connection div p {
+  text-align: center;
+  margin: 0;
+  margin-left: 5px;
+}
+
+main section#chat img#send {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+}
